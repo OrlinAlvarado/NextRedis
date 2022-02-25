@@ -1,4 +1,4 @@
-import { searchCars } from '../../lib/redis';
+import { searchCars } from '../../../lib/redis';
 
 export default async function handler(req, res) {
     const q = req.query.q;

@@ -1,16 +1,17 @@
-import Link from 'next/link';
+import Head from 'next/head';
 import CarForm from '../../lib/CarForm'
+import Layout from '../../components/layout';
 
 export default function Home() {
   return (
-    <div>
-      <h1>Create a Car</h1>
-      <CarForm />  
-      
-      <Link href="/posts/first-post">
-        <a>Lee esta pagina</a>
-      </Link>
-    </div>
+    <Layout>
+        <Head>
+          <title>Using REDIS</title>
+        </Head>
+        <h2>Adding new car</h2>
+        <hr />
+        <CarForm />  
+      </Layout>
     
   )
 }

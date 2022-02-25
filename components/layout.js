@@ -27,7 +27,8 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        {home ? (
+      <Navbar />
+        {home && (
           <>
             <Image
               priority
@@ -39,14 +40,11 @@ export default function Layout({ children, home }) {
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
-        ) : (
-          <>
-            <Navbar />
-          </>
+          
         )}
       </header>
       <main>
-     
+        
         {children}
       </main>
       {!home && (
