@@ -1,4 +1,4 @@
-import SearchForm from '../lib/SearchForm'
+import SearchForm from '../../lib/SearchForm'
 
 export default function Search() {
     return (
